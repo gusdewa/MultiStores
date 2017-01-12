@@ -110,7 +110,7 @@ tasks.set('publish', () => {
   global.DEBUG = process.argv.includes('--debug') || false;
   const remote = {
     name: 'github',
-    url: 'https://github.com/gusdewa/MultiStores.git', // TODO: Update deployment URL
+    url: 'https://github.com/gusdewa/MultiStores.publish.git', // TODO: Update deployment URL
   };
   const opts = { cwd: path.resolve(__dirname, './build'), stdio: ['ignore', 'inherit', 'inherit'] };
   const git = (...args) => new Promise((resolve, reject) => {
