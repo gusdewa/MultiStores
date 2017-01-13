@@ -12,6 +12,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Server.Models;
+using Server.Repositories;
 
 namespace Server
 {
@@ -53,6 +54,8 @@ namespace Server
                 .AddViews()
                 .AddRazorViewEngine()
                 .AddJsonFormatters();
+
+            services.AddSingleton<IGoodsRepository, GoodsRepository>();
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory factory)

@@ -4,7 +4,7 @@
     "view": "./views/home",
     "chunk": "main",
     "data": {
-      "articles": "GET https://gist.githubusercontent.com/koistya/a32919e847531320675764e7308b796a/raw/articles.json"
+      "articles": "GET http://api.sukaweb.com/wp-json/wp/v2/posts"
     }
   },
   {
@@ -15,6 +15,10 @@
   {
     "path": "/about",
     "view": "./views/about"
+  },
+  {
+    "path": "/blog",
+    "view": "./views/blog"
   },
   {
     "path": "/tasks/:status(pending|completed)?",

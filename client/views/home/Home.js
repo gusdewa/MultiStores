@@ -1,8 +1,7 @@
 import React, { PropTypes } from 'react';
 import Layout from '../../components/Layout';
 
-const title = 'ASP.NET Core Starter Kit';
-const link = 'https://github.com/kriasoft/aspnet-starter-kit';
+const title = 'MultiStores: a multi-tenant application';
 
 class Home extends React.Component {
 
@@ -18,13 +17,12 @@ class Home extends React.Component {
     return (
       <Layout>
         <h1 className="mdl-typography--title">Welcome to {title}!</h1>
-        <p className="mdl-typography--body-1">
-          For more information visit <a href={link}>{link}</a>
-        </p>
         <h4 className="mdl-typography--title">Articles</h4>
         <ul>
-          {this.props.articles.map((article, i) =>
-            <li key={i}><a href={article.url}>{article.title}</a> by {article.author}</li>
+          {this.props.articles.map((article) =>
+            <li key={article.id}>
+              <a href={article.link}>{article.title.rendered}</a> by {article.author}
+            </li>
           )}
         </ul>
       </Layout>

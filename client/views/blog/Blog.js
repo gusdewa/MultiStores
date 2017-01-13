@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '../../components/Layout';
 
-class About extends React.Component {
+class Blog extends React.Component {
 
   componentDidMount() {
     document.title = 'MultiStores: multi-tenant online stores';
@@ -10,9 +10,9 @@ class About extends React.Component {
   render() {
     return (
       <Layout>
-        <h1 className="mdl-typography--title">About Us</h1>
+        <h1 className="mdl-typography--title">Blog Us</h1>
         <p className="mdl-typography--body-1">
-          Coming soon.
+          Blogs
         </p>
       </Layout>
     );
@@ -20,4 +20,4 @@ class About extends React.Component {
 
 }
 
-export default About;
+export default Blog;
