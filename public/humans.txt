@@ -11,6 +11,6 @@
 
 # TECHNOLOGY COLOPHON
 
-    HTML5, CSS3
-    ASP.NET Core, GraphQL, React
-    Webpack, Babel, Node.js
+    JavaScript, HTML5, CSS3
+    React, Redux, Material Design Lite (MDL)
+    Babel, Webpack, Node.js
