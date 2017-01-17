@@ -1,5 +1,7 @@
 import React from 'react';
 
+/* eslint-disable */
+
 function decodeParam(val) {
   if (!(typeof val === 'string' || val.length === 0)) {
     return val;

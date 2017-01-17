@@ -81,13 +81,12 @@ const config = {
         test: /\.jsx?$/,
         include: [
           path.resolve(__dirname, '../src'),
-          path.resolve(__dirname, '../components'),
         ],
         loader: 'babel-loader',
         options: babelConfig,
       },
       {
-        test: /\.css/,
+        test: /\.(css|scss)$/,
         use: [
           {
             loader: 'style-loader',
