@@ -1,4 +1,4 @@
-# Multi Stores
+#multistores 
 
 A multi-tenant online store app powered by React and ASP.NET Core.
 
